@@ -59,8 +59,12 @@ const renderSongs = (array) => {
 `
     ;
   
-  });
-}
+  }).join("");
+  playlistSongs.innerHTML = songsHTML;
+};
+
+
+renderSongs(userData?.songs);
 
 
 
